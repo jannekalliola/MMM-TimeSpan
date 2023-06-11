@@ -65,11 +65,11 @@ Module.register("MMM-TimeSpan", {
 				let dts = document.createElement("div");
 				dts.className = "timeSinceDates";
 				let dtSt = document.createElement("span");
-				dtSt.className = "timeSinceDatesStart";
+				dtSt.className = "timeSinceDatesStart light";
 				dtSt.innerHTML = this.formatDate(this.spans[i].startD, this.config.dateFormat);
 				dts.appendChild(dtSt);
 				let dtEn = document.createElement("span");
-				dtEn.className = "timeSinceDatesEnd";
+				dtEn.className = "timeSinceDatesEnd light";
 				dtEn.innerHTML = this.formatDate(this.spans[i].endD, this.config.dateFormat);
 				dts.appendChild(dtEn);
 				timeSince.appendChild(dts);

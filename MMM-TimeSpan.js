@@ -55,7 +55,6 @@ Module.register("MMM-TimeSpan", {
 		if(this.spans.length > 0) {
 			let now = new Date();
 			let currentTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), 0, 0, 0).getTime();
-			console.log(this.spans);
 			for(let i = 0; i < this.spans.length; i++) {
 				let llen = this.spans[i].end - currentTime;
 				let percent = Math.min(100, (this.spans[i].len - llen) * 100 / this.spans[i].len);
